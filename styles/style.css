@@ -1,3 +1,29 @@
+/*Fonts*/
+
+@font-face {
+    font-family: 'RedHat';
+    src: local('RedHat'), local('RedHat_Medium'), url('./../font/RedHatDisplay-Medium.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    font-family: 'RedHat';
+}
+
+h1 {
+    font-size: 3em;
+    letter-spacing: 0.2em;
+}
+
+aside, main {
+    font-size: 1.1em;
+}
+
+footer {
+    font-size: 1em;
+}
+
 /*Position*/
 
 .wrapper {
@@ -38,9 +64,8 @@ main {
 }
 
 main img {
-    min-width: 100%;
+    width: 100%;
     height: 350px;
-    object-fit: cover;
 }
 
 ul {
@@ -52,25 +77,6 @@ ul {
 footer {
     grid-column: 1/4;
     text-align: center;
-}
-
-/*Fonts*/
-
-@font-face {
-    font-family: ;
-}
-
-h1 {
-    font-size: 3em;
-    letter-spacing: 0.2em;
-}
-
-aside, main {
-    font-size: 1.1em;
-}
-
-footer {
-    font-size: 1em;
 }
 
 /*Colors*/
@@ -186,6 +192,9 @@ tr:nth-child(odd) {
     .wrapper {
         grid-template-columns: 20% 1fr;
         column-gap: 3px;
+    }
+    main, aside, footer {
+        font-size: 0.8em;
     }
     h1 {
         font-size: 2.1em;
