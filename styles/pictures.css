@@ -1,0 +1,36 @@
+body {
+    background-color: rgb(179, 179, 255);
+}
+
+img {
+    width: 100%;
+    height: 300px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 5px;
+}
+
+.col {
+    flex: 50%;
+    max-width: 50%;
+    padding: 5px 5px;
+}
+
+.col img {
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media screen and (max-width: 748px) {
+    .col {
+        flex: 100%;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,164 @@
+/*Position*/
+
+form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    column-gap: 3px;
+    width: 40%;
+    border-radius: 10px;
+    margin: 20px auto;
+    }
+
+div {
+    display: inline-block;
+    margin: 10px 0px;
+}
+
+select {
+    width: 80%;
+}
+
+h1 {
+    grid-column: 1/3;
+    text-align: center;
+}
+
+.first-name {
+    grid-column: 1/2;
+    text-align: center;
+}
+
+.last-name {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.phone {
+    grid-column: 1/2;
+    text-align: center;
+}
+
+.email {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.start-city {
+    grid-column: 1/2;
+    text-align: center;
+}
+
+.end-city {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.start-date {
+    grid-column: 1/2;
+    text-align: center;
+} 
+
+.end-date {
+    grid-column: 2/3;
+    text-align: center;
+}
+
+.comment {
+    grid-column: 1/3; 
+    margin: 0px auto;
+}
+
+.submit {
+    grid-column: 1/2;
+}
+
+.reset {
+    grid-column: 2/3;
+}
+
+button {
+    border-radius: 10px;
+    width: 100%;
+}
+
+input {
+    border-radius: 3px;
+    width: 80%;
+}
+
+/*Fonts*/
+
+form {
+    font-size: 1.1em;
+    }
+
+button {
+    font-size: 1.0em;
+}
+
+/*Colors*/
+body {
+    background-color: rgb(218, 228, 248);
+}
+
+form {
+    background-color: rgba(146, 183, 252, 0.705);
+}
+
+input {
+    background-color: rgb(253, 251, 251);
+    color: rgb(109, 108, 108);
+}
+
+button {
+    background-color: rgb(7, 84, 228);
+    color: whitesmoke;
+}
+
+/*Breakpoints: 1200px/768px/540px/420px */
+
+@media screen and (max-width: 1200px) {
+    form {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    form {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    form {
+        width: 100%;
+        font-size: 1.1em;
+    }
+}
+
+    @media screen and (max-width: 420px) {
+        form {
+            width: 100%;
+            font-size: 1.1em;
+        }
+        .first-name {
+            grid-column: 1/4;
+            text-align: center;
+        }
+        
+        .last-name {
+            grid-column: 1/4;
+            text-align: center;
+        }
+        
+        .phone {
+            grid-column: 1/4;
+            text-align: center;
+        }
+        
+        .email {
+            grid-column: 1/4;
+            text-align: center;
+        }
+}

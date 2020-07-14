@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+    <meta charset=UTF-8">
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+
+<body>
+
+        <form action="#" method="POST">
+            <h1>Planning your individual trip</h1>
+            <div class="first-name">
+                <label for="">Your first name*</label><br>
+                <input type="text" name="first-name" required>
+            </div>
+
+            <div class="last-name">
+                <label for="">Your last name*</label><br>
+                <input type="text" name="last-name" required>
+            </div>
+
+
+            <div class="phone">
+                <label for="">Phone number*</label><br>
+                <input type="tel" name="phone" id="" placeholder="+1 (---)"required>
+            </div>
+
+            <div class="email">
+                <label for="">Email*</label><br>
+                <input type="email" name="email" id="" placeholder="example@gmail.com" required>
+            </div>
+
+            <div class="start-city">
+                <label for="">Start city</label><br>
+                <select>
+                    <option>Anchorage</option>
+                    <option>Fairbanks</option>
+                    <option>Juneau</option>
+                    <option>Wasilla</option>
+                    <option>Valdez</option>
+                </select>
+            </div>
+
+            <div class="end-city">
+                <label for="">End city</label><br>
+                <select>
+                    <option>Valdez</option>
+                    <option>Fairbanks</option>
+                    <option>Juneau</option>
+                    <option>Wasilla</option>
+                    <option>Anchorage</option>
+                </select>
+            </div>
+
+            <div class="start-date">
+                <label for="">Start date*</label><br>
+                <input type="date" name="date" id="" required>
+            </div>
+
+            <div class="end-date">
+                <label for="">End date*</label><br>
+                <input type="date" name="date" id="" required>
+            </div>
+
+            <div class="comment">
+                Comments: <br>
+                <textarea name="comment" id="" cols="50" rows="10" placeholder="Type your wishes for the future tour"></textarea>
+            </div>
+
+            <div class="submit">
+                <button type="submit">Send</button>
+            </div>
+
+            <div class="reset">
+                <button type="reset">Reset</button>
+            </div>
+
+        </form>
+    
+
+</body>
+</html>
