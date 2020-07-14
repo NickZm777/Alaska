@@ -38,8 +38,9 @@ main {
 }
 
 main img {
-    width: 100%;
+    min-width: 100%;
     height: 350px;
+    object-fit: cover;
 }
 
 ul {
@@ -54,6 +55,10 @@ footer {
 }
 
 /*Fonts*/
+
+@font-face {
+    font-family: ;
+}
 
 h1 {
     font-size: 3em;
