@@ -193,8 +193,11 @@ tr:nth-child(odd) {
         grid-template-columns: 20% 1fr;
         column-gap: 3px;
     }
-    main, aside, footer {
+    main, footer {
         font-size: 0.8em;
+    }
+    table, aside {
+        font-size: 0.7em;
     }
     h1 {
         font-size: 2.1em;
